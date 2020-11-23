@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Just pizza</string>
+    <string name="quantity">Количество</string>
+    <string name="number">1</string>
+    <string name="order">Поръчка</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="names">Имена</string>
+    <string name="onlyPizza">Само пица</string>
+    <string name="pizzawithadds">Пица с добавки</string>
+    <string name="adds">Добавки</string>
+    <string name="corn">Царевица</string>
+    <string name="cucumber">Кисели краставички</string>
+    <string name="mushrooms">Гъби</string>
+    <string name="theName">Имена:</string>
+    <string name="withMushrooms">С гъби?</string>
+    <string name="withCorn">С царевица?</string>
+    <string name="withCucumber">С кисели краставички?</string>
+    <string name="quant">Количество:</string>
+    <string name="value">Обща стойност:</string>
+    <string name="thank">Благодарим Ви!</string>
+
+</resources>

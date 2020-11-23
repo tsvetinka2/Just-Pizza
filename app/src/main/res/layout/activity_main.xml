@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/names"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/onlyPizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "@string/onlyPizza"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/pizzaAdds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "@string/pizzawithadds"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+        <LinearLayout
+            android:id="@+id/addsList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adds"
+                android:textStyle="bold"/>
+            <CheckBox
+                android:id="@+id/mushrooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "@string/mushrooms"/>
+            <CheckBox
+                android:id="@+id/corn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/corn"/>
+            <CheckBox
+                android:id="@+id/cucumbers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cucumber"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/minus"
+                android:onClick="decrement">
+
+            </Button>
+            <TextView
+                android:id="@+id/tvQuantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/number"
+                android:gravity="center"
+                android:textStyle="bold">
+
+            </TextView>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/plus"
+                android:onClick="increment">
+
+            </Button>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@color/grey"
+            android:layout_gravity="center"
+            android:onClick="submitOrder"
+            android:text="@string/order" />
+    </LinearLayout>
+</ScrollView>
